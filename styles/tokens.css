@@ -1,0 +1,50 @@
+/* Single source of truth for the AEGIS visual language.
+   Mirrored numerically in lib/colors.ts for deck.gl (which needs RGB arrays). */
+:root {
+  /* Base */
+  --bg: #05070a;
+  --bg-elev: #0a0e12;
+  --panel: rgba(10, 14, 18, 0.72);
+  --panel-solid: #0c1116;
+  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text: #e8edf2;
+  --text-dim: #8a94a2;
+  --text-faint: #5b636e;
+
+  /* Semantic accents (one per role) */
+  --ok: #39ff88; /* live / healthy */
+  --amber: #ffb020; /* alert / caution */
+  --red: #ff3b4e; /* critical */
+  --cyan: #28e0f0; /* space */
+  --violet: #9a8cff; /* information */
+  --blue: #4aa8ff; /* weather */
+
+  /* Layer accents */
+  --c-flights: #ffb020;
+  --c-satellites: #28e0f0;
+  --c-earthquakes: #ff6b3d;
+  --c-disasters: #ff8f3f;
+  --c-events: #9a8cff;
+  --c-cyber: #ff3b4e;
+  --c-weather: #4aa8ff;
+  --c-ships: #39ff88;
+  --c-fires: #ff5522;
+  --c-cameras: #78d2ff;
+  --c-outages: #ff5aa0;
+  --c-airquality: #b4dc5a;
+  --c-weatherRadar: #4aa8ff;
+
+  /* Type */
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, "Menlo", monospace;
+
+  /* Geometry */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --blur: 10px;
+  --z-hud: 20;
+  --z-popover: 40;
+}
