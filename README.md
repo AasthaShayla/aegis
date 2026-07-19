@@ -5,6 +5,11 @@ command-center map: aircraft, ships, satellites, earthquakes, natural events,
 weather, public cameras, global news, markets, cyber threats — plus **cross-stream
 alerts** and an optional **local-AI situation briefing**. One browser tab.
 
+<p align="center">
+  <img src="docs/screenshots/hero.png" alt="AEGIS — live air traffic, satellites and correlated alerts over Europe" width="100%">
+  <br><em>Live European airspace, satellites, earthquakes and cross-stream alerts — entirely from free, open data.</em>
+</p>
+
 > **Honest framing:** the viral "open-source Palantir / spy-grade surveillance"
 > posts that inspired this are hype. AEGIS shows only **publicly broadcast
 > signals** (ADS-B, TLE) and **open APIs** — no classified data, no private

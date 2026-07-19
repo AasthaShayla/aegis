@@ -8,7 +8,8 @@ const csp = [
   "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
-  "connect-src 'self' https:",
+  // data: is required so deck.gl can load its inline SVG marker icons.
+  "connect-src 'self' https: data:",
   "worker-src 'self' blob:",
   "font-src 'self' data:",
   "frame-ancestors 'self'",
