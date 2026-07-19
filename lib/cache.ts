@@ -2,11 +2,11 @@
  * In-memory TTL cache with single-flight, stale-on-error, disk persistence,
  * and per-key status tracking.
  *
- *   1. TTL             — serve fresh within TTL (protects upstreams).
- *   2. Single-flight   — coalesce concurrent misses into one upstream call.
- *   3. Stale-on-error  — on failure, keep serving the last good value.
- *   4. Persistence     — snapshot to disk so a restart/cold-start has data.
- *   5. Status          — record last fetch/error per key for /api/health.
+ *   1. TTL             - serve fresh within TTL (protects upstreams).
+ *   2. Single-flight   - coalesce concurrent misses into one upstream call.
+ *   3. Stale-on-error  - on failure, keep serving the last good value.
+ *   4. Persistence     - snapshot to disk so a restart/cold-start has data.
+ *   5. Status          - record last fetch/error per key for /api/health.
  *
  * Interface is Redis-swappable for multi-instance production.
  */
@@ -55,7 +55,7 @@ async function ensureLoaded(): Promise<void> {
       if (v && typeof v.fetchedAt === "number") store.set(k, v);
     }
   } catch {
-    /* no snapshot yet — fine */
+    /* no snapshot yet - fine */
   }
 }
 

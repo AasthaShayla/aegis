@@ -1,6 +1,6 @@
 /**
  * Markets: top crypto (CoinGecko keyless public API) + the Fear & Greed index
- * (alternative.me). Non-geographic — rendered as the bottom ticker + gauge, not
+ * (alternative.me). Non-geographic - rendered as the bottom ticker + gauge, not
  * on the map. 60s TTL keeps us safely under CoinGecko's keyless rate limit.
  */
 

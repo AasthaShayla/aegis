@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AEGIS — Global Intelligence Dashboard",
+  title: "AEGIS - Global Intelligence Dashboard",
   description:
     "A real-time world monitor built entirely on free, legal open data: live flights, satellites, earthquakes, natural events, global news, markets and cyber threats on one map.",
 };

@@ -1,5 +1,5 @@
 /**
- * OPTIONAL — internet outages from Cloudflare Radar (free API token required).
+ * OPTIONAL - internet outages from Cloudflare Radar (free API token required).
  * Off unless CLOUDFLARE_API_TOKEN is set.
  */
 

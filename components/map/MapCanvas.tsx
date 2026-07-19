@@ -60,7 +60,7 @@ export default function MapCanvas({ layers, onDeckClick, radarOn, followTarget }
   const handleLoad = useCallback((e: { target: { resize: () => void } }) => e.target.resize(), []);
 
   // Interleaved by default (labels draw over data). `?overlay=1` uses an
-  // overlaid deck canvas instead — more portable across GL backends (e.g. some
+  // overlaid deck canvas instead - more portable across GL backends (e.g. some
   // headless/screenshot renderers), at the cost of labels sitting under data.
   const interleaved =
     typeof window === "undefined" || new URLSearchParams(window.location.search).get("overlay") !== "1";

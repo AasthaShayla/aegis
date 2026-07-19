@@ -2,7 +2,7 @@
 
 AEGIS is built entirely on **free, public, legally-accessible open data**. It uses
 only publicly broadcast signals (ADS-B, TLE), open APIs, and cameras that operators
-**intentionally publish** for public viewing — no classified data, no private or
+**intentionally publish** for public viewing - no classified data, no private or
 unsecured surveillance feeds, no scraping of people. Given the mix of licenses
 (several are non-commercial), **AEGIS is for non-commercial, educational, and
 research use.** Respect each provider's terms.
@@ -13,7 +13,7 @@ research use.** Respect each provider's terms.
 | Satellites | [CelesTrak](https://celestrak.org) / 18th SDS | Free TLE; respect throttling. | none |
 | Earthquakes | [USGS](https://earthquake.usgs.gov) | U.S. Gov public domain. | none |
 | Natural events | [NASA EONET](https://eonet.gsfc.nasa.gov) | NASA open data. | none |
-| Weather (probe) | [Open-Meteo](https://open-meteo.com) | **CC-BY 4.0** — attribution required. | none |
+| Weather (probe) | [Open-Meteo](https://open-meteo.com) | **CC-BY 4.0** - attribution required. | none |
 | Weather radar | [RainViewer](https://www.rainviewer.com) | Free radar tiles. | none |
 | Global events | [GDELT](https://www.gdeltproject.org) + news RSS (BBC, Al Jazeera, NPR) | Rate-limited; RSS fallback. | none |
 | Public cameras | [Transport for London](https://tfl.gov.uk) JamCams; [Windy Webcams](https://www.windy.com) | Public cameras only. Windy adds global coverage. | none / optional |

@@ -1,12 +1,12 @@
 /** Display formatters. All timestamps are epoch ms. */
 
 export function fmtNum(n: number | null | undefined, opts: Intl.NumberFormatOptions = {}): string {
-  if (n === null || n === undefined || Number.isNaN(n)) return "—";
+  if (n === null || n === undefined || Number.isNaN(n)) return "-";
   return new Intl.NumberFormat("en-US", opts).format(n);
 }
 
 export function fmtCoord(lat: number | null, lon: number | null): string {
-  if (lat === null || lon === null) return "—";
+  if (lat === null || lon === null) return "-";
   const ns = lat >= 0 ? "N" : "S";
   const ew = lon >= 0 ? "E" : "W";
   return `${Math.abs(lat).toFixed(3)}°${ns} ${Math.abs(lon).toFixed(3)}°${ew}`;
@@ -29,7 +29,7 @@ export function fmtUtc(ts: number): string {
 }
 
 export function fmtAltitude(ft: number | null): string {
-  if (ft === null || ft === undefined) return "—";
+  if (ft === null || ft === undefined) return "-";
   return `${fmtNum(ft)} ft`;
 }
 

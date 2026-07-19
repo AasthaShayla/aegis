@@ -19,7 +19,7 @@ function rowsFor(e: Entity): Row[] {
   switch (e.type) {
     case "flight":
       rows.push({ k: "Altitude", v: p.onGround ? "on ground" : fmtAltitude(n(p.altitude)) });
-      rows.push({ k: "Speed", v: n(p.speed) !== null ? `${fmtNum(n(p.speed))} kt` : "—" });
+      rows.push({ k: "Speed", v: n(p.speed) !== null ? `${fmtNum(n(p.speed))} kt` : "-" });
       rows.push({ k: "Heading", v: `${Math.round(n(p.heading) ?? 0)}°` });
       if (p.aircraftType) rows.push({ k: "Type", v: String(p.aircraftType) });
       if (p.registration) rows.push({ k: "Registration", v: String(p.registration) });
@@ -27,12 +27,12 @@ function rowsFor(e: Entity): Row[] {
       if (p.military) rows.push({ k: "Class", v: "military" });
       break;
     case "satellite":
-      rows.push({ k: "Altitude", v: n(p.altKm) !== null ? `${fmtNum(n(p.altKm))} km` : "—" });
+      rows.push({ k: "Altitude", v: n(p.altKm) !== null ? `${fmtNum(n(p.altKm))} km` : "-" });
       if (p.noradId) rows.push({ k: "NORAD", v: String(p.noradId) });
       if (p.group) rows.push({ k: "Group", v: String(p.group) });
       break;
     case "earthquake":
-      rows.push({ k: "Magnitude", v: n(p.mag) !== null ? `M ${(n(p.mag) as number).toFixed(1)}` : "—" });
+      rows.push({ k: "Magnitude", v: n(p.mag) !== null ? `M ${(n(p.mag) as number).toFixed(1)}` : "-" });
       rows.push({ k: "Depth", v: `${fmtNum(n(p.depth))} km` });
       if (p.tsunami) rows.push({ k: "Tsunami", v: "flagged" });
       break;
@@ -60,7 +60,7 @@ function rowsFor(e: Entity): Row[] {
       rows.push({ k: "Confidence", v: `${p.confidence}%` });
       break;
     case "camera":
-      rows.push({ k: "Provider", v: String(p.provider ?? "—") });
+      rows.push({ k: "Provider", v: String(p.provider ?? "-") });
       if (p.view) rows.push({ k: "View", v: String(p.view) });
       break;
     case "outage":
@@ -71,7 +71,7 @@ function rowsFor(e: Entity): Row[] {
       if (p.country) rows.push({ k: "Country", v: String(p.country) });
       break;
     case "ship":
-      rows.push({ k: "Speed", v: n(p.speed) !== null ? `${p.speed} kt` : "—" });
+      rows.push({ k: "Speed", v: n(p.speed) !== null ? `${p.speed} kt` : "-" });
       rows.push({ k: "Heading", v: `${Math.round(n(p.heading) ?? 0)}°` });
       break;
     case "fire":

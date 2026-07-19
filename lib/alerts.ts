@@ -1,6 +1,6 @@
 /**
  * Cross-stream correlation. Turns raw layer data into a ranked list of alerts
- * by applying simple, deterministic rules across streams. Pure function — runs
+ * by applying simple, deterministic rules across streams. Pure function - runs
  * client-side over whatever layers are currently loaded.
  */
 
@@ -39,7 +39,7 @@ export function computeAlerts(input: AlertInputs): AlertItem[] {
       alerts.push({
         id: `tsunami-${q.id}`,
         severity: "critical",
-        title: `Tsunami flag — M${mag.toFixed(1)}`,
+        title: `Tsunami flag - M${mag.toFixed(1)}`,
         detail: q.label,
         lat: q.lat,
         lon: q.lon,

@@ -29,7 +29,7 @@ export async function fetchEvents(query: string): Promise<Entity[]> {
   try {
     const gdelt = await fetchGdelt(query);
     if (gdelt.length > 0) return gdelt;
-    // GDELT returned empty (rare) — supplement with RSS.
+    // GDELT returned empty (rare) - supplement with RSS.
     return await fetchRss();
   } catch (err) {
     if (err instanceof HttpError || err instanceof CircuitOpenError) {

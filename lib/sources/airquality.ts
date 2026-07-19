@@ -1,5 +1,5 @@
 /**
- * OPTIONAL — air quality from OpenAQ v3 (free API key required).
+ * OPTIONAL - air quality from OpenAQ v3 (free API key required).
  * Off unless OPENAQ_API_KEY is set.
  */
 

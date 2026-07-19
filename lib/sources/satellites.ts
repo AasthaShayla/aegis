@@ -5,13 +5,13 @@
  *
  * CelesTrak is aggressively throttled (1 download / group / 2h / IP; 50 errors
  * in 2h => firewall ban). So: long TTL, NO retry loop (the cache serves stale
- * TLE on error — orbital elements stay usable for hours), descriptive UA.
+ * TLE on error - orbital elements stay usable for hours), descriptive UA.
  */
 
 import { fetchText } from "@/lib/http";
 import type { Entity } from "@/lib/entities";
 
-export const SAT_TTL_MS = 2 * 60 * 60 * 1000; // 2h — do not lower.
+export const SAT_TTL_MS = 2 * 60 * 60 * 1000; // 2h - do not lower.
 export const SAT_SOURCE = "CelesTrak";
 export const SAT_ATTRIBUTION = "Orbital data: CelesTrak / 18th Space Defense Squadron";
 

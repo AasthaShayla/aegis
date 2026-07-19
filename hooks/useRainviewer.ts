@@ -18,7 +18,7 @@ export function useRainviewerTiles(enabled: boolean): string | null {
         const frame = past[past.length - 1];
         if (frame && !cancelled) setUrl(`${j.host}${frame.path}/256/{z}/{x}/{y}/2/1_1.png`);
       } catch {
-        /* ignore — overlay simply won't show */
+        /* ignore - overlay simply won't show */
       }
     };
     load();

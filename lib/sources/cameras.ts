@@ -1,10 +1,10 @@
 /**
- * Public cameras — only cameras that operators publish for public viewing.
+ * Public cameras - only cameras that operators publish for public viewing.
  *   - Key-free: Transport for London JamCams (London traffic cameras).
  *   - Optional (WINDY_WEBCAMS_KEY): Windy Webcams, a global database of public
  *     webcams, queried by viewport bbox.
  *
- * This deliberately does NOT touch private/unsecured cameras — only feeds that
+ * This deliberately does NOT touch private/unsecured cameras - only feeds that
  * are intentionally public.
  */
 

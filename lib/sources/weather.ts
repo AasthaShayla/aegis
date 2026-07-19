@@ -1,6 +1,6 @@
 /**
  * Point weather forecast from Open-Meteo (no key, CC-BY 4.0). Used for
- * click-to-inspect on the map — one request per interaction, cached per
+ * click-to-inspect on the map - one request per interaction, cached per
  * rounded coordinate, so we stay far under the 600/min budget.
  */
 

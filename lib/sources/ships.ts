@@ -1,9 +1,9 @@
 /**
- * OPTIONAL — AIS vessel positions via aisstream.io (free key required).
+ * OPTIONAL - AIS vessel positions via aisstream.io (free key required).
  *
  * A single persistent server-side WebSocket subscribes to global positions and
  * buffers the latest report per MMSI in memory. The route reads a snapshot
- * (optionally filtered by bbox) — no reconnect per request. Off unless
+ * (optionally filtered by bbox) - no reconnect per request. Off unless
  * AISSTREAM_API_KEY is set. Uses the global WebSocket (Node 22+).
  */
 

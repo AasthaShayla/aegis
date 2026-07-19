@@ -233,7 +233,7 @@ export default function Dashboard() {
     const topEvents = fEvents.slice(0, 6).map((e) => `${e.label} (${num(e.props.count)} mentions)`).join("; ");
     const bigQuakes = fQuakes.filter((q) => num(q.props.mag) >= 4).slice(0, 5).map((q) => `M${num(q.props.mag).toFixed(1)} ${q.label}`).join("; ");
     const disasterCats = [...new Set(fDisasters.map((d) => String(d.props.category)))].join(", ");
-    const alertLines = alerts.slice(0, 6).map((a) => `${a.severity.toUpperCase()}: ${a.title} — ${a.detail}`).join("\n");
+    const alertLines = alerts.slice(0, 6).map((a) => `${a.severity.toUpperCase()}: ${a.title} - ${a.detail}`).join("\n");
     return [
       `Aircraft tracked: ${counts.flights}. Satellites: ${counts.satellites}.`,
       `Notable earthquakes: ${bigQuakes || "none"}.`,

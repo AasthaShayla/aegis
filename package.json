@@ -2,7 +2,7 @@
   "name": "aegis",
   "version": "0.1.0",
   "private": true,
-  "description": "AEGIS — real-time global intelligence dashboard built on free, legal open data",
+  "description": "AEGIS - real-time global intelligence dashboard built on free, legal open data",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

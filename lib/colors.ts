@@ -26,7 +26,7 @@ export const COLORS = {
   white: [232, 237, 242] as RGB,
 };
 
-/** Earthquake circle radius (pixels) — exponential so big quakes stand out. */
+/** Earthquake circle radius (pixels) - exponential so big quakes stand out. */
 export function magToRadius(mag: number | null): number {
   const m = mag ?? 0;
   return Math.max(3, Math.pow(1.7, Math.max(0, m)));
@@ -41,7 +41,7 @@ export function depthColor(depthKm: number): RGBA {
   return [r, g, b, 200];
 }
 
-/** Cyber IOC color by confidence (0–100): low = dim, high = hot red. */
+/** Cyber IOC color by confidence (0-100): low = dim, high = hot red. */
 export function confidenceColor(conf: number): RGBA {
   const t = Math.min(1, Math.max(0, conf / 100));
   return [255, Math.round(120 * (1 - t)), Math.round(90 * (1 - t)), 180];

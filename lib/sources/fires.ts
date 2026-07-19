@@ -1,5 +1,5 @@
 /**
- * OPTIONAL — high-resolution wildfire hotspots from NASA FIRMS (free MAP_KEY).
+ * OPTIONAL - high-resolution wildfire hotspots from NASA FIRMS (free MAP_KEY).
  * Off unless FIRMS_MAP_KEY is set (route guards on `features.fires`).
  */
 

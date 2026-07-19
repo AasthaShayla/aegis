@@ -45,7 +45,7 @@ a:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
-/* Scrollbars — thin and unobtrusive on dark panels. */
+/* Scrollbars - thin and unobtrusive on dark panels. */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

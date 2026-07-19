@@ -50,7 +50,7 @@ export interface AegisMeta {
   /** License / attribution string surfaced in the UI footer. */
   attribution: string;
   count: number;
-  /** Optional free-form note (e.g. "layer disabled — set FIRMS_MAP_KEY"). */
+  /** Optional free-form note (e.g. "layer disabled - set FIRMS_MAP_KEY"). */
   note?: string;
 }
 
